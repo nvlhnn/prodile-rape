@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ctfsh - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- tw -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- -----google fonts------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth; /* <----- THE SECRET ---- */
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="px-56 w-full fixed h-20 z-50 flex bg-black justify-between items-center text-white"
+    >
+      <div class="text-2xl font-semibold tracking-wide">Ctfsh.</div>
+      <div class="grid gap-10 grid-flow-col">
+        <div class=""><a href="#home">Home</a></div>
+        <div class=""><a href="#artwork">Portofolio</a></div>
+        <div class=""><a href="#about">About</a></div>
+        <div class=""><a href="#contact">Contact</a></div>
+      </div>
+    </nav>
+
+    <section
+      id="home"
+      class="bg-cover bg-[url('/images/BG.png')] h-screen max-h-[90%] text-white px-56 flex justify-start pt-20"
+    >
+      <div class="flex flex-col basis-1/10 items-center justify-center">
+        <div class="h-[35%] border-l-2 border-white"></div>
+        <div class="mt-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+            />
+          </svg>
+        </div>
+        <div class="mt-2">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 48 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.5625 0.546875V29.4531H14.5273C15.8213 29.4531 24.7324 29.1907 24.7324 21.0547C24.7324 15.9705 21.2351 14.2432 19.459 13.7305C20.7651 13.114 23.3652 11.6492 23.3652 7.72461C23.3652 5.53955 23.054 0.546875 14.1367 0.546875H0.5625ZM32.3984 3.23242V5.86914H43.1895V3.23242H32.3984ZM6.91016 5.47852H12.8672C13.4287 5.47852 17.2129 5.17944 17.2129 8.79883C17.2129 11.8933 14.4785 12.2168 13.3555 12.2168H6.91016V5.47852ZM38.0625 8.26172C29.9021 8.26172 28.1992 15.3479 28.1992 18.418C28.1992 27.5305 35.6699 28.5742 38.0625 28.5742C44.5139 28.5742 46.345 24.3994 47.0957 22.0801H42.4082C42.2251 22.6782 40.8579 24.6191 38.2578 24.6191C33.8999 24.6191 33.5215 21.2134 33.5215 19.6875H47.3887C47.6694 14.4141 45.3623 8.26172 38.0625 8.26172ZM37.916 12.2168C39.2161 12.2168 40.2659 12.5952 40.8945 13.291C41.5232 13.9929 41.9871 15.0183 42.1152 16.3672H33.5215C33.5459 15.9949 33.6313 15.5676 33.7656 15.0977C33.8999 14.6155 34.1074 14.1577 34.4492 13.7305C34.791 13.3093 35.2671 12.9431 35.8164 12.6562C36.3779 12.3633 37.0737 12.2168 37.916 12.2168ZM6.91016 16.5625H13.7949C15.1621 16.5625 18.3848 16.7761 18.3848 20.7129C18.3848 24.5276 14.3259 24.5215 13.6973 24.5215H6.91016V16.5625Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="mt-5 h-[35%] border-l-2 border-white"></div>
+      </div>
+      <div class="flex flex-col items-start justify-center ml-20">
+        <div class="text-5xl font-bold">Rafizal Fasha</div>
+        <div class="text-xl tracking-widest mt-2">
+          Graphic Designer | Photographer
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="artwork"
+      class="porto-artwork h-screen font-bold py-20 tracking-wide text-3xl px-32 pt-40"
+    >
+      <div class="grid grid-flow-col place-content-center gap-[400px]">
+        <div class="underline underline-offset-8 decoration-4">
+          <a href="#artwork">Artwork</a>
+        </div>
+        <div><a href="#photo">Photograph</a></div>
+      </div>
+      <div class="swiper mySwiper my-20 max-w-7xl">
+        <div class="swiper-wrapper" data-type="artwork">
+          <div data-id="0" class="swiper-slide" id="slide">
+            <img src="/images/01 Salvator Mudi - Da Vinci.jpeg" alt="" />
+          </div>
+          <div data-id="1" class="swiper-slide">
+            <img
+              src="/images/02 Virgin Mary - Francesco de Rossi.jpeg"
+              alt=""
+            />
+          </div>
+          <div data-id="2" class="swiper-slide">
+            <img
+              src="/images/12 saint praxedis - johannes vermeer.jpeg"
+              alt=""
+            />
+          </div>
+          <div data-id="3" class="swiper-slide">
+            <img
+              src="/images/13 Rembrandt van Rijn Self Portrait.jpeg"
+              alt=""
+            />
+          </div>
+          <div data-id="4" class="swiper-slide">
+            <img
+              src="/images/15 Self Portrait as Saint Catherine of Alexandria - Artemisia Gentileschi .jpeg"
+              alt=""
+            />
+          </div>
+          <div data-id="5" class="swiper-slide">
+            <img
+              src="/images/20 Mary Cassatt - After The Bullfight.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination mt-56"></div> -->
+      </div>
+    </section>
+
+    <section
+      id="photo"
+      class="porto-photograph font-bold py-20 h-screen tracking-wide text-3xl px-32 pt-40"
+    >
+      <div class="grid grid-flow-col place-content-center gap-[400px]">
+        <div><a href="#artwork">Artwork</a></div>
+        <div class="underline underline-offset-8 decoration-4">
+          <a href="#photo">Photograph</a>
+        </div>
+      </div>
+      <div class="swiper swipe-photo my-20 max-w-7xl">
+        <div class="swiper-wrapper">
+          <div data-id="0" class="swiper-slide" id="slide">
+            <img
+              src="/images/0DD49E45-5C75-4FA7-9B08-CB9061082F3F-16196-00000B5C908E3764.jpeg"
+              alt=""
+            />
+          </div>
+          <div data-id="1" class="swiper-slide">
+            <img
+              src="/images/1BCE89A7-DF31-4706-AA85-4596E3F62A12-14637-00000A9946904864.jpeg"
+              alt=""
+            />
+          </div>
+          <div data-id="2" class="swiper-slide">
+            <img
+              src="/images/BD3A5CBF-3B22-4EDF-B68B-E79EDE00410D-15139-00000ACEABCB234E 2.jpeg"
+              alt=""
+            />
+          </div>
+          <div data-id="3" class="swiper-slide">
+            <img src="/images/DSCF5610.jpeg" alt="" />
+          </div>
+          <div data-id="4" class="swiper-slide">
+            <img src="/images/DSCF5613.jpeg" alt="" />
+          </div>
+          <div data-id="5" class="swiper-slide">
+            <img src="/images/DSCF5614.jpeg" alt="" />
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination mt-56"></div> -->
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="about h-screen text-white px-56 flex flex-row justify-start items-center pt-20"
+      style="background-image: url('/images/BG 2.png')"
+    >
+      <div class="basis-2/3 flex flex-col items-start justify-center">
+        <div class="text-3xl font-semibold tracking-wide">
+          Hi, I am Rafizal Fasha
+        </div>
+        <div class="pr-40 mt-6">
+          I am a graphic designer and photographer from Indonesia. I was born in
+          Pati, Indonesia. I start designing since 14 years old. I am using
+          Adobe Photoshop as my main software. I am focused on digital collage
+          art and doing some photography as a hobby.
+        </div>
+        <div class="pr-40 mt-4">
+          I have a great passion on art & design, I’m adaptable, curious, fast
+          learner, and have big dreams for future. I’m good at working alone or
+          in teamwork.
+        </div>
+      </div>
+      <div class="basis-1/3">
+        <img src="/images/Untitled-2.png" alt="" srcset="" />
+      </div>
+    </section>
+
+    <section id="contact" class="contact h-screen mt-20 flex flex-col pt-20">
+      <div
+        class="h-[40%] font-bold text-4xl underline underline-offset-8 decoration-4 flex items-center justify-center"
+      >
+        Contact Me
+      </div>
+      <div
+        class="h-[30%] w-full flex justify-center items-center text-white font-semibold tracking-widest"
+        style="background-image: url('/images/Texturelabs_Grunge_239XL.png')"
+      >
+        I will be happy to answer all your question
+      </div>
+      <div
+        class="text-white h-[30%] bg-black w-full flex flex-row justify-around items-center"
+      >
+        <div class="flex items-center flex-col">
+          <div>Social Media</div>
+          <div class="grid grid-flow-col gap-8 mt-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              />
+            </svg>
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 48 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.5625 0.546875V29.4531H14.5273C15.8213 29.4531 24.7324 29.1907 24.7324 21.0547C24.7324 15.9705 21.2351 14.2432 19.459 13.7305C20.7651 13.114 23.3652 11.6492 23.3652 7.72461C23.3652 5.53955 23.054 0.546875 14.1367 0.546875H0.5625ZM32.3984 3.23242V5.86914H43.1895V3.23242H32.3984ZM6.91016 5.47852H12.8672C13.4287 5.47852 17.2129 5.17944 17.2129 8.79883C17.2129 11.8933 14.4785 12.2168 13.3555 12.2168H6.91016V5.47852ZM38.0625 8.26172C29.9021 8.26172 28.1992 15.3479 28.1992 18.418C28.1992 27.5305 35.6699 28.5742 38.0625 28.5742C44.5139 28.5742 46.345 24.3994 47.0957 22.0801H42.4082C42.2251 22.6782 40.8579 24.6191 38.2578 24.6191C33.8999 24.6191 33.5215 21.2134 33.5215 19.6875H47.3887C47.6694 14.4141 45.3623 8.26172 38.0625 8.26172ZM37.916 12.2168C39.2161 12.2168 40.2659 12.5952 40.8945 13.291C41.5232 13.9929 41.9871 15.0183 42.1152 16.3672H33.5215C33.5459 15.9949 33.6313 15.5676 33.7656 15.0977C33.8999 14.6155 34.1074 14.1577 34.4492 13.7305C34.791 13.3093 35.2671 12.9431 35.8164 12.6562C36.3779 12.3633 37.0737 12.2168 37.916 12.2168ZM6.91016 16.5625H13.7949C15.1621 16.5625 18.3848 16.7761 18.3848 20.7129C18.3848 24.5276 14.3259 24.5215 13.6973 24.5215H6.91016V16.5625Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="flex justify-center relative left-12">
+          <input
+            type="text"
+            class="outline-none bg-black border-2 border-white px-2 placeholder:font-extralight placeholder:text-gray-500 placeholder:text-sm py-1"
+            placeholder="Email"
+          />
+          <button class="bg-white text-black px-4 font-semibold text-sm">
+            SEND
+          </button>
+        </div>
+        <div class="flex items-start flex-col">
+          <div class="grid grid-flow-col gap-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-telephone"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+              />
+            </svg>
+            <div>+62 821 3394 7104</div>
+          </div>
+          <div class="grid grid-flow-col gap-5 mt-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-envelope"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+              />
+            </svg>
+            <div>rfzl.fsh@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="swiper-modal fixed top-0 z-10 w-screen h-screen flex justify-center items-center bg-slate-800 bg-opacity-70"
+    >
+      <div
+        class="swiper swiper-preview max-w-2xl h-full my-20 bg-white px-24 pt-20"
+      >
+        <div class="modal-close relative top-5 flex justify-end left-16">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </div>
+        <div class="swiper-wrapper swiper-wrapper-preview"></div>
+        <div class="swiper-button-next mr-8"></div>
+        <div class="swiper-button-prev ml-8"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        let swiper_modal;
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+        var swiper_photo = new Swiper(".swipe-photo", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+
+        const artwork = [
+          "01 Salvator Mudi - Da Vinci.jpeg",
+          "02 Virgin Mary - Francesco de Rossi.jpeg",
+          "12 saint praxedis - johannes vermeer.jpeg",
+          "13 Rembrandt van Rijn Self Portrait.jpeg",
+          "15 Self Portrait as Saint Catherine of Alexandria - Artemisia Gentileschi .jpeg",
+          "20 Mary Cassatt - After The Bullfight.jpeg",
+        ];
+
+        const photo = [
+          "0DD49E45-5C75-4FA7-9B08-CB9061082F3F-16196-00000B5C908E3764.jpeg",
+          "1BCE89A7-DF31-4706-AA85-4596E3F62A12-14637-00000A9946904864.jpeg",
+          "BD3A5CBF-3B22-4EDF-B68B-E79EDE00410D-15139-00000ACEABCB234E 2.jpeg",
+          "DSCF5610.jpeg",
+          "DSCF5613.jpeg",
+          "DSCF5614.jpeg",
+        ];
+        $(".swiper-modal").hide();
+
+        $(".swiper-slide").click(function () {
+          $("html, body").css({
+            overflow: "hidden",
+            // height: "100%",
+          });
+          let id = $(this).data("id");
+          let type = $(this).parent().data("type");
+          let content = "";
+          if (type == "artwork") {
+            artwork.forEach((element) => {
+              content += `
+              <div class="swiper-slide flex flex-col justify-center items-center py-20">
+                <img class="max-h-[400px]" src="/images/${element}" alt="" />
+                <div class="mt-10 text-lg font-bold tracking-wide">
+                  Salvator Mudi
+                </div>
+                <div class="mt-2">2021</div>
+                <div class="mt-2 mb-10">4000 x 3000 px</div>
+              </div>
+              `;
+            });
+          } else {
+            photo.forEach((element) => {
+              content += `
+              <div class="py-40 swiper-slide flex flex-col justify-center items-center">
+                <img class="max-h-[560px]"  src="/images/${element}" alt="" />
+              </div>
+              `;
+            });
+          }
+
+          let modal = `
+          <div class="swiper swiper-preview max-w-2xl h-full my-20 bg-white px-24">
+            <div class="modal-close relative top-5 flex justify-end left-16">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-x-lg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+                />
+              </svg>
+            </div>
+            <div class="swiper-wrapper swiper-wrapper-preview">
+              <!-- <div class="swiper-slide flex flex-col justify-center items-center">
+                <img src="/images/01 Salvator Mudi - Da Vinci.jpeg" alt="" />
+                <div class="mt-10 text-lg font-bold tracking-wide">
+                  Salvator Mudi
+                </div>
+                <div class="mt-2">2021</div>
+                <div class="mt-2">4000 x 3000 px</div>
+              </div>
+              <div class="swiper-slide flex flex-col justify-center items-center">
+                <img
+                  src="/images/02 Virgin Mary - Francesco de Rossi.jpeg"
+                  alt=""
+                />
+                <div class="mt-10 text-lg font-bold tracking-wide">
+                  Salvator Mudi
+                </div>
+                <div class="mt-2">2021</div>
+                <div class="mt-2">4000 x 3000 px</div>
+              </div>
+              <div class="swiper-slide flex flex-col justify-center items-center">
+                <img
+                  src="/images/12 saint praxedis - johannes vermeer.jpeg"
+                  alt=""
+                />
+                <div class="mt-10 text-lg font-bold tracking-wide">
+                  Salvator Mudi
+                </div>
+                <div class="mt-2">2021</div>
+                <div class="mt-2">4000 x 3000 px</div>
+              </div>
+              <div class="swiper-slide flex flex-col justify-center items-center">
+                <img
+                  src="/images/13 Rembrandt van Rijn Self Portrait.jpeg"
+                  alt=""
+                />
+                <div class="mt-10 text-lg font-bold tracking-wide">
+                  Salvator Mudi
+                </div>
+                <div class="mt-2">2021</div>
+                <div class="mt-2">4000 x 3000 px</div>
+              </div>
+              <div class="swiper-slide flex flex-col justify-center items-center">
+                <img
+                  src="/images/15 Self Portrait as Saint Catherine of Alexandria - Artemisia Gentileschi .jpeg"
+                  alt=""
+                />
+                <div class="mt-10 text-lg font-bold tracking-wide">
+                  Salvator Mudi
+                </div>
+                <div class="mt-2">2021</div>
+                <div class="mt-2">4000 x 3000 px</div>
+              </div>
+              <div class="swiper-slide flex flex-col justify-center items-center">
+                <img
+                  src="/images/20 Mary Cassatt - After The Bullfight.jpeg"
+                  alt=""
+                />
+                <div class="mt-10 text-lg font-bold tracking-wide">
+                  Salvator Mudi
+                </div>
+                <div class="mt-2">2021</div>
+                <div class="mt-2">4000 x 3000 px</div>
+              </div> -->
+            </div>
+            <div class="swiper-button-next mr-8"></div>
+            <div class="swiper-button-prev ml-8"></div>
+          </div>
+          `;
+
+          $(".swiper-wrapper-preview").html(content);
+          console.log($(" .swiper-wrapper-preview").html());
+          swiper_modal = new Swiper(".swiper-preview", {
+            spaceBetween: 100,
+            initialSlide: id,
+            loop: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+          $(".swiper-modal").show();
+        });
+
+        $(".modal-close").click(function () {
+          $("html, body").css({
+            overflow: "auto",
+            height: "auto",
+          });
+          $(".swiper-modal").hide();
+          swiper_modal.destroy(true, true);
+        });
+      });
+    </script>
+  </body>
+</html>
